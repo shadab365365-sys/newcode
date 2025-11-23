@@ -1,0 +1,12 @@
+name: FirstWorkflows
+on: push
+jobs:
+    Checkout:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v3
+            - name: install dependancies
+              run: npm ci
+            - name: all done
+              run: echo "All done"
