@@ -11,6 +11,7 @@ jobs:
             - name: start lint
               run: npm run lint
     lintstart:
+        needs: Deployment
         runs-on: ubuntu-latest
         steps:
             - name: Checkout git hub code
@@ -20,6 +21,7 @@ jobs:
             - name: start build
               run: npm run build
     testing:
+        needs: lintstart
         runs-on: ubuntu-latest
         steps:
             - name: checkout
