@@ -9,4 +9,4 @@ jobs:
         - name: SecondScript
           run: echo "It is working"
         - name: Npm Instllation
-          run: rpm ci
+          run: npm ci
