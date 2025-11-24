@@ -2,7 +2,7 @@ name: FirstWorkflows
 on:
   pull_request:
     types:
-    - opened
+    - closed
   workflow_dispatch:
 jobs:
     Checkout:
