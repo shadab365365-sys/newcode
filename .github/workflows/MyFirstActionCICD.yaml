@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - dev
-      - feature
+      - featurenew
     paths-ignore:
       - '.github\workflows'
 jobs:
