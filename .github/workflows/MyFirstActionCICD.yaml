@@ -7,8 +7,7 @@ on:
   push:
     branches:
       - dev
-    paths-ignore:
-      - '.github\workflows'
+      - feature
 jobs:
     Checkout:
         runs-on: ubuntu-latest
